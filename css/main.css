@@ -27,6 +27,19 @@ a {
     font-weight: bold; 
 }
 
+nav{
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    z-index: 200;
+}
+
+.dropdown-item{
+    z-index: 200;
+}
+
 
 nav img {
     height: 50px;
