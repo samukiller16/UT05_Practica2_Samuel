@@ -1,0 +1,107 @@
+main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 90px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.food {
+  width: 300px;
+  background-color: #fff; /* Cambia el fondo según tu diseño */
+  border: 1px solid #ddd; /* Cambia el borde según tu diseño */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333; /* Cambia el color del texto según tu diseño */
+  overflow: hidden;
+}
+
+.food__title {
+  text-align: center;
+  margin-top: 10px;
+  color: #ffd700; /* Cambia el color del título según tu diseño */
+}
+
+.card__figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__header {
+  padding: 20px;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 24px;
+  margin: 0;
+  color: #ffd700; /* Cambia el color del título según tu diseño */
+}
+
+.card__subtitle {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #646464;
+}
+
+.card__body {
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card__copy {
+  margin: 0;
+  color: #333; /* Cambia el color del texto según tu diseño */
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.form__button {
+  background-color: #ffd700;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #e5bb00;
+}
