@@ -1,5 +1,5 @@
-nav {
-    background-color: #ffd700;
+#mainnav {
+    background-color: #ffd700!important;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -7,7 +7,12 @@ nav {
     width: 100%;
 }
 
-ul {
+#breadcrumb{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+#mainnav ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,17 +22,17 @@ ul {
 }
 
 
-li {
+#mainnav li {
     margin: 0 10px;
 }
 
-a {
+#mainnav a {
     text-decoration: none;
     color: white; 
     font-weight: bold; 
 }
 
-nav{
+#mainnav nav{
     color: white;
     font-weight: bold;
 }
