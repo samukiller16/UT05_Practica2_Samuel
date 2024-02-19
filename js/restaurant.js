@@ -962,4 +962,5 @@ const RestaurantsManager = (function () {
   };
 })();
 
-export { RestaurantsManager, Coordinate };
+export default RestaurantsManager;
+export {Coordinate};
