@@ -862,6 +862,24 @@ const RestaurantsManager = (function () {
         }
       }
 
+      *getDishesInMenu(menuName) {
+        // Buscar el índice del menú en la lista de menús
+        const menuIndex = this.#menus.findIndex(menuObj => menuObj.menu.name === menuName);
+    
+        // Verificar si el menú existe
+        if (menuIndex === -1) {
+            throw new Error(`Menu "${menuName}" not found.`);
+        }
+    
+        // Obtener los platos asociados al menú
+        const dishesInMenu = this.#menus[menuIndex].dishes.map(dishObj => dishObj.dish);
+    
+        // Devolver un iterador para los platos del menú
+        for (const dish of dishesInMenu) {
+            yield dish;
+        }
+      }
+
       //Funciones para creaciones de Objetos:
 
       createDish(name, description, ingredients, image) {
@@ -873,7 +891,7 @@ const RestaurantsManager = (function () {
         const existingDish = existingDishObj ? existingDishObj.dish : null;
         if (existingDish != null) {
           // Si ya existe, devolver el objeto Dish existente
-          return existingDish.dish;
+          return existingDish;
         } else {
           // Si no existe, crear un nuevo objeto Dish
           const newDish = new Dish(name, description, ingredients, image);
